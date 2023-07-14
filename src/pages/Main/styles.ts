@@ -6,5 +6,3 @@ export const Container = styled.main`
 
   display: flex;
 `
-
-
