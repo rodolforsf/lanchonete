@@ -1,3 +1,11 @@
+import { Head } from "../../../components/Head"
+import { SnackTitle } from "../../../components/SnackTitle"
+
 export default function Lanches() {
-    return <h1>Lanches</h1>
+    return (
+        <>
+            <Head title='Lanches' description='Nossos melhores lanches' />
+            <SnackTitle>Lanches</SnackTitle>
+        </>
+    )
 }
