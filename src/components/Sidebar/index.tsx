@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 import { Container } from './styles'
 
-import { ReactComponent as BurgerIcon } from '../../assets/burger.svg'
+import { ReactComponent as LancheIcon } from '../../assets/burger.svg'
 import { ReactComponent as PizzaIcon } from '../../assets/pizza.svg'
-import { ReactComponent as SodaPopIcon } from '../../assets/soda.svg'
-import { ReactComponent as IceCreamIcon } from '../../assets/ice-cream.svg'
+import { ReactComponent as BebidasIcon } from '../../assets/soda.svg'
+import { ReactComponent as SobremesasIcon } from '../../assets/ice-cream.svg'
 
 import menuImg from '../../assets/menu.svg'
 
@@ -24,28 +25,28 @@ export function Sidebar() {
       <nav>
         <ul>
           <li>
-            <a href='#' className='active'>
-              <BurgerIcon />
-              <span>Hambúrgueres</span>
-            </a>
+            <NavLink to='/'>
+              <LancheIcon />
+              <span>Lanches</span>
+            </NavLink>
           </li>
           <li>
-            <a href='#'>
+            <NavLink to='/pizzas'>
               <PizzaIcon />
               <span>Pizzas</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href='#'>
-              <SodaPopIcon />
+            <NavLink to='/bebidas'>
+              <BebidasIcon />
               <span>Bebidas</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href='#'>
-              <IceCreamIcon />
+            <NavLink to='/sobremesas'>
+              <SobremesasIcon />
               <span>Sobremesas</span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
