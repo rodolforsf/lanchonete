@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react'
 import { Head } from '../../../components/Head'
 import { Snacks } from '../../../components/Snacks'
 import { SnackTitle } from '../../../components/SnackTitle'
+import { SnackData } from '../../../interfaces/SnackData'
 
 import { getLanches } from '../../../services/api'
 
 export default function Lanches() {
-    const [lanches, setLanches] = useState([])
+    const [lanches, setLanches] = useState<SnackData[]>([])
 
     useEffect(() => {
       ;(async () => {

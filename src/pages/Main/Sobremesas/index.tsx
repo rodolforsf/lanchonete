@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react'
 import { Head } from "../../../components/Head"
 import { SnackTitle } from "../../../components/SnackTitle"
 import { Snacks } from "../../../components/Snacks"
+import { SnackData } from '../../../interfaces/SnackData'
 
 import { getSobremesas } from '../../../services/api'
 
 export default function Sobremesas() {
-  const [sobremesas, setSobremesas] = useState([])
+  const [sobremesas, setSobremesas] = useState<SnackData[]>([])
 
   useEffect(() => {
       (async() => {
