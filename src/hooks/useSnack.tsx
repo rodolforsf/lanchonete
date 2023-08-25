@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { SnackContext } from '../styles/contexts/SnackContext'
+import { SnackContext } from '../contexts/SnackContext'
 
 export function useSnack() {
     return useContext(SnackContext)
