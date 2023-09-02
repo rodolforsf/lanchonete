@@ -7,6 +7,7 @@ import BebidasPagina from './pages/Main/Bebidas'
 import SobremesasPagina from './pages/Main/Sobremesas'
 
 import MeuCarrinhoPagina from './pages/MyCart'
+import Pagamento from './pages/Payment'
 
 export function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export function AppRoutes() {
         <Route path='/sobremesas' element={<SobremesasPagina />} />
       </Route>
       <Route path='cart' element={<MeuCarrinhoPagina />}/>
+      <Route path='payment' element={<Pagamento />}/>
     </Routes>
   )
 }
