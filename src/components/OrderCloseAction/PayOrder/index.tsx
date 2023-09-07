@@ -1,7 +1,7 @@
-import { currencyFormat } from "../../../../helpers/currencyFormat"
-import { useCart } from "../../../../hooks/useCart"
+import { currencyFormat } from "../../../helpers/currencyFormat"
+import { useCart } from "../../../hooks/useCart"
 
-import { Container } from "../../style"
+import { Container } from "../style"
 
 export function PayOrder() {
   const { cart, payOrder } = useCart()
@@ -10,7 +10,9 @@ export function PayOrder() {
 
   return (
     <Container>
-      <button type='button' onClick={payOrder}>Pagar</button>
+      <button type='submit'>
+        Pagar
+      </button>
       <span>
         Total <strong>{currencyFormat(totalAmount)}</strong>
       </span>
